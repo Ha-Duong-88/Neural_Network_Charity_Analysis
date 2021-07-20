@@ -63,10 +63,11 @@ The specific dimensions considered in the analysis and tuning:
     * Adding or reducing the number of epochs to the training regimen.
 
 # Summary
-Overall, the model improved by dropping non-beneficial variables, binning the unique values and tuning multiple hyper parameters. 
+Overall, the model improved by dropping non-beneficial variables, binning the unique values and tuning multiple hyper parameters. The pre-optimized model had an accuracy of 72%. After optimizing the deep learning (neural network) model, the accuracy improved to 78.8%. This both met the goal of the project and reflects real-world results. 
 
 ## Recommendation
 Additional tuning of the nodel could be performed by:
 
   * Utilizing different classifiers such as Random Forest and Multi Linear Regression.
-  * Utilizingn the Keras tuner.
+  * Utilizing the Keras tuner.
+  * Iterating further on the existing Sequential model by tuning the different parameters, for example by adjusting the combinations of parameters, performing       additional binning and changing the activation functions. As neural networks are prone to overfitting, this technique has diminishing returns. Another           consideration is that there is a trade-off between accuracy and the loss metric.
